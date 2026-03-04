@@ -1,11 +1,12 @@
 # ls4_control
-Python code to control LS4 camera
+Python code to control LS4 camera.
+
 This was written to synchronously control four Archon controllers (STA).
 
 It is built on top of the sdss-archon python code
 (https://github.com/sdss/archon)
 
-It has been tested with Ubunto 23.10
+It has been tested with Ubuntu 23.10
 
 
 Installation:
