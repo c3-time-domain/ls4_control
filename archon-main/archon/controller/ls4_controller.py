@@ -310,7 +310,13 @@ class LS4Controller(LS4_Device):
                 "gain": 1.0,\
                 "readnois": 0.0,\
                 "ccdsec": "[1:1024,1:4096]",\
-                "biassec": "[1024:1024,4096:4096]",\
+                "biassec": "[1024:1024,4096:4096]",\ 
+                "datasecl": "[7:1030,1:4096]",\
+                "biassecl": "[1031:1050,1:4096]",\
+                "presecl": "[1:6,1:4096]",\
+                "datasecr": "[21:1044,1:4096]",\
+                "biassecr": "[1:20,1:4096]",\
+                "presecr": "[1045:1050,1:4096]",\
                 "bias": 0.0,\
                 "ccdtemp": 0.0,\
                 "fileroot": "",\
