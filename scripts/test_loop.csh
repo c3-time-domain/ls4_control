@@ -232,6 +232,10 @@ while ( $l == "DONE" && $n < $n_last )
     mkdir $save_dir
   endif
 
+  # Add TCS pointing information in FITS headers
+  echo `date` "injecting TCS telemetry into FITS headers"
+  $LS4_CONTROL_ROOT/scripts/inject_tcs_head.bash
+
   echo `date` " start exposure: $n mode: $exp_mode exptime: $exptime "
   set l = `echo "expose $shutter_flag $exptime $prefix $exp_mode" | netcat -N $CCP_HOST $CCP_PORT`
   echo `date` " done exposure: $n mode: $exp_mode exptime: $exptime  response: [ $l ]" 
